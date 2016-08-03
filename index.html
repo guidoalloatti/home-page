@@ -1,233 +1,830 @@
-	
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Guido Alloatti</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="guidoalloatti.com" />
-	<meta name="keywords" content="guido alloatti" />
-	<meta name="author" content="guidoalloatti.com" />
+<head>
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Guido Alloatti - Bio</title>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Including all the css files -->
+    <link rel="stylesheet" type="text/css" href="css/about_me.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/experience.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/images.css">
+    <link rel="stylesheet" type="text/css" href="css/link_effect.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <link rel="stylesheet" type="text/css" href="css/skills.css">
+    <link rel="stylesheet" type="text/css" href="css/skillset.css">
+    <link rel="stylesheet" type="text/css" href="css/visualizer.css">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Including all the js files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/common.js"></script>
+</head>
 
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+<body>
+
+    <div id="top"></div>
+    <div id="page-wrapper">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObjxect']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-80554018-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <div id="header">
+        <div id="main-header" class="header">
+            <div class="navigation-elements">
+                <div class="go-top-element">
+                    <a id="go_top_link" href="#top">
+                        <img src="images/go-top.jpg" title="Go to the top of the page" class="go-top-page" width="40px;" height="40px;">
+                    </a>
+                </div>
+                <div class="go-bottom-element">
+                    <a id="go_bottom_link" href="#bottom">
+                        <img src="images/go-bottom.jpg" title="Go to the bottom of the page" class="go-bottom-page" width="40px;" height="40px;">
+                    </a>
+                </div>
+            </div>  
+            <div class="header-centered">  
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="about_me_link" class="tenth before after" href="#about-me-anchor">About Me</a>
+                    </span>
+                </div>
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="background_link" class="tenth before after" href="#background-anchor">Background</a>
+                    </span>
+                </div>
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="my_work_link" class="tenth before after" href="#my-work-anchor">Experience</a>
+                    </span>
+                </div>
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="skills_link" class="tenth before after" href="#my-skills-anchor">Skills</a>
+                    </span>
+                </div>
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="contact_link" class="tenth before after" href="#contact-anchor">Contact</a>
+                    </span>
+                </div>
+                <div class="horizontal">
+                    <span class="square individual">
+                        <a id="visualizer_link" class="tenth before after" href="#visualizer-anchor">Visualizer</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="language-holder">
+        <img src="images/english.jpg" title="Set Language English" alt="Set Language to English" id="english-link" class="english-lang language-element " width="40px;" height="40px;">
+        <img src="images/spanish.jpg" title="Establecer idioma Español" alt="Establecer idioma Español" id="spanish-link" class="spanish-lang language-element " width="40px;" height="40px;">
+    </div>
+
+    <div id="nice-image">
+        <img src="images/bg1.jpg" width="100%" height="852px" />
+        <div id="name_over_bg">
+            <div id="prof_text">
+                <i>professional bio</i>
+            </div>
+            <div id="prof_name">
+                GUIDO ALLOATTI
+            </div>
+        </div>
+    </div>
+        
+    <div id="about-me" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                ABOUT ME
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+            GUIDO ALLOATTI
+        </div>
+        <div id="about-me-image" class="circular centered"></div>
+        <div id="about-me-title">
+            Ninja Developer || Team Lead || Technical Manager
+        </div>
+        <br>
+        <div class="presentation">
+            IT leader with years of experience building effective teams and bringing the business vision to life.
+            Whether it's running the day to day operations of the development group, planning out a strategy for automation with a technical team, or working with product management to figure out how to capitalize on an opportunity, I love being the bridge between technology and business. I believe in hiring highly skilled people, building fully cross functional teams, giving them a clear vision of their goals, and then getting out of their way. 
+        </div>
+        <div id="about-me-location">
+            <strong>Located in</strong>: Rosario, Santa Fe, Argentina
+        </div>
+    </div>
+
+    <div id="background" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                    BACKGROUND
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>
+        <div class="content-text">
+            <div class="background-left-column">
+                <h2>Professional Career</h2>
+                I have been working for almost 10 years in the Information Technology industry, fulfilling numerous roles on projects with a worldwide scope.
+                <br>During this period I worked in several roles and 
+                positions, always related to software development.
+            </div>
+            <div class="background-middle-column">
+                <h2>Roles and Responsabilities</h2>
+                <ul>
+                  <li>Project Manager</li>
+                  <li>Team Leader</li>
+                  <li>Backend & Frontend Developer</li>
+                  <li>QA & Automation Tester</li>
+                  <li>Systems Analyst & Software Architect</li>
+                  <li>Recruiting & perform Technical Interviews</li>
+                  <li>Certififed Scrum Master and Scrum Coach</li>
+                </ul>
+            </div>
+            <div class="background-right-column">
+                <h2>Methodologies</h2>
+                Waterfall development in the early beginnings but when 
+                the opportunity presented itself to change I moved and focused my efforts on web applications specialization
+                using company-wide Agile Methodologies adoption as 
+                main tools, writing software applying several 
+                scripting languages, such as PHP, Perl, Python or Ruby.
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                    EXPERIENCE
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>
+      <!-- </div> -->
+      <div>
+        <div class="content-text">
+            <div>
+                <div class="left-experience">
+                  <a href="http://www.kathmandu.co.nz" target="_blank">
+                    <img src="images/kathmandu.jpg" width="140px" height="120px">
+                  </a><br>
+                  <a href="http://www.kathmandu.co.nz" target="_blank">
+                    www.kathmandu.co.nz
+                  </a>
+                </div>
+                <div class="right-experience">
+                  <h3>Technical Team Lead & Senior Web Developer | 2015 | Christchurch, NZ</h3>
+                  <ul>
+                    <li>Leading and developing with a inter cultural and multi country based group of 10 people including front and backend developers and QA.</li>
+                    <li>Working with PHP based Magento Enterprise Edition ecommerce platform, developing in the back and front end sides of the application.</li>
+                    <li>Using GIT with Stash integration, Jira and confluence, with an unique and dynamic agile methodology based on Scrum.</li>
+                    <li>Developing using PHP, JS, CSS industry code standards for front and back end.</li>
+                  </ul>
+                </div>
+            </div>
+
+            <hr class="hr-content-separator">
+            <div>
+              <div class="left-experience">
+                <a href="http://www.gonzoft.com.ar" target="_blank">
+                  <img src="images/gonzoft.jpg" width="140px" height="150px">
+                </a><br>
+                <a href="http://www.gonzoft.com.ar" target="_blank">
+                  www.gonzoft.com.ar
+                </a>
+                </div>
+                <div class="right-experience">
+                  <h3>Full-stack developer & CTO | November 2014 to Present | Rosario, ARG</h3>
+                  <ul>
+                    <li>Founded the company with a couple or really good friends to be able to work using the technologies we prefer, choosing carefully our clients and being able to create high quality software.</li>
+                    <li>We are not attached to any particular technologies, developing using PHP, RAILS, AngularJS, MeteorJS, NodeJS and any new cool framework we can found.</li>
+                  </ul>
+                </div>
+            </div>
+
+            <hr class="hr-content-separator">
+            <div>
+              <div class="left-experience">
+                <a href="http://www.velocitypartners.net" target="_blank">
+                  <img src="images/velocity.jpg" width="150px" height="150px">
+                </a><br>
+                <a href="http://www.velocitypartners.net" target="_blank">
+                  www.velocitypartners.net
+                </a>
+                </div>
+                <div class="right-experience">
+                  <h3>Senior Team Lead & Solutions Manager | March 2012 to March 2015 | Rosario, ARG</h3>
+                  <ul>
+                    <li>Developing, leading and managing several teams for several clients, among them:</li>
+                    <ul>
+                      <li><strong>G2 Webservices:</strong> Solutions Manager and Senior Team Lead</li>
+                      <li><strong>Kinnser:</strong> Solutions Manager</li>
+                      <li><strong>WebAssign:</strong> Senior Team Lead</li>
+                      <li><strong>iContact:</strong> Team Lead</li>
+                    </ul>
+                    <li>Worked mainly with <strong>PHP</strong>, <strong>Ruby on Rails</strong> and <strong>Perl</strong></li>
+                    <li>Implemented <strong>Testing Automation</strong>, <strong>Continuos Integration</strong>, <strong>Unit Testing and TDD</strong> to increase the software quality.</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div id="more_experience">
+              <hr class="hr-content-separator">
+              <div>
+                <div class="left-experience">
+                  <a href="http://www.velocitypartners.net" target="_blank">
+                    <img src="images/velocity.jpg" width="150px" height="150px">
+                  </a><br>
+                  <a href="http://www.velocitypartners.net" target="_blank">
+                    www.velocitypartners.net
+                  </a>
+                  </div>
+                  <div class="right-experience">
+                    <h3>Senior Web Developer & Team Lead | November 2009 to March 2012 | Rosario, ARG</h3>
+                    <ul>
+                      <li>Developing and Leading a group of developers for <strong>Sungevity</strong>, a solar panel installation company located in California.</li>
+                      <li>Development of new functionalities and maintainance of current customer's CRM (Upgrade safe customization) and implementation of SugarCRM 5.5 Professional, a sales force automation aplication.</li>
+                      <li>User portal development using CakePHP MVC Framework. It includes the integration and interaction with the CRM via Web Services)</li>
+                      <li>Architecture research and design for application load balancing.</li>
+                    </ul>
+                  </div>
+              </div>
+
+              <hr class="hr-content-separator">
+              <div>
+                <div class="left-experience">
+                  <a href="https://www.accenture.com/ar-es/" target="_blank">
+                    <img src="images/accenture.jpg" width="150px" height="150px">
+                  </a><br>
+                  <a href="https://www.accenture.com/ar-es/" target="_blank">
+                    www.accenture.com
+                  </a>
+                  </div>
+                  <div class="right-experience">
+                    <h3>Senior Web Developer & Architect | February 2009 to November 2009 | Rosario, ARG</h3>
+                    <ul>
+                      <li>As senior Developer in Accenture the responsibility is high and is related to the big amount of work that needs to be done every day it involves implementation and testing for all configuration changes to ensure that the software applications fulfil the functional requirements and technical requirements.</li>
+                      <li>Responsible for supervising other developers with less experience and assisting the software architects according to their needs.</li>
+                      <li>Accenture provides outsourcing and software factory to multinational corporations.</li>
+                    </ul>
+                  </div>
+              </div>
+
+              <hr class="hr-content-separator">
+              <div>
+                <div class="left-experience">
+                  <a href="https://www.linkedin.com/vsearch/p?company=LATINUX+SISTEMAS+S%2EA%2E&trk=prof-0-ovw-curr_pos" target="_blank">
+                    <img src="images/latinux.jpg" width="150px" height="150px">
+                  </a><br>
+                  </div>
+                  <div class="right-experience">
+                    <h3>Developer | February 2005 to November 2009 | Rosario, ARG</h3>
+                    <ul>
+                      <li>Started my developer career with a really mixed technologies combo, such as C, PHP, Python, Perl and C# worked on several small projects, from 2 to 6 months each. Some examples can be:</li>
+                      <li><strong>Stock and Management System</strong>
+                      Distributed stock and management control for construction companies in communications networks in C#.</li>
+                      <li><strong>ZoneMinder CCTV control System</strong>
+                      Customize Zoneminder open source in PHP with company specific contents.</li>
+                      <li><strong>Traffic Light Control Visualizer</strong>
+                      Display System traffic control, Processing system, data interpretation and sampling. Developed over Turbogears framework for Python.</li>
+                      <li>
+                      <strong>Reporter System</strong>
+                      This was a intercommunication monitoring system for public telephony rates. Developed using linux native GTK, with C and Mysql.</li>
+                      <li><strong>POS System</strong>
+                      Develop and maintain a distributed point os sale for a local company with multiple stores. Developed in C# with Nhibernate and Mysql over .NET framework</li>
+                    </ul>
+                  </div>
+              </div>
+
+              <hr class="hr-content-separator">
+              <div>
+                <div class="left-experience">
+                  <a href="http://www.elepeservicios.com.ar/" target="_blank">
+                    <img src="images/elepe.jpg" width="150px" height="150px">
+                  </a><br>
+                  <a href="http://www.elepeservicios.com.ar/" target="_blank">
+                    www.elepeservicios.com.ar
+                  </a>
+                  </div>
+                  <div class="right-experience">
+                    <h3>Junior Developer | April 2004 to February 2005 | Rosario, ARG</h3>
+                    <ul>
+                      <li>This was a part time job when finishing the University.</li>
+                      <strong>Technologies in this Job:</strong>
+                      <li>AS/400</li>
+                      <li>Cool Plex (Case Tool)</li>
+                      <strong>Roles in this Job</strong>
+                      <li>Junior Developer</li>
+                      <li>QA</li>
+                      <li>Technical Documentation Writer</li>
+                      <li>Analyst</li>
+                    </ul>
+                  </div>
+              </div>           
+            </div>
+        <div>
+          <input id="more_experience_button" class="centered" type="button" value="Show me More Experience" />
+        </div>
+      </div>
+    </div>
 
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Cookie -->
-	<script src="js/jquery.cookie.js"></script>
-	<script>
-	if ( $.cookie('styleCookie') === 'style-light.css') {
-		$('html, body').css('background', '#eeeeee');
-	} else if ($.cookie('styleCookie') === 'style.css') {
-		$('html, body').css('background', '#222222');
-	}
-	
-	</script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
 
-	<!-- Viewport Units Buggyfill -->
-	<script src="js/viewport-units-buggyfill.js"></script>
 
-	<!-- Googgle Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+    <div id="my-skills-anchor"></div>
+    <div id="skills" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                SKILLS
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>
+        <!--
+        <div>
+            <input id="more_skills_button" class="centered" type="button" value="Show Me More Skills" />
+        </div>
+        -->
 
-	
-	<!-- Main JS  -->
-	<script src="js/main.js"></script>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <div class="left">
+    <svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+     x="0px" y="0px" width="724px" height="400px"
+     overflow="visible" xml:space="preserve">
+      
+      <g id="circleBarCharts">
+          <g id="circleBar-web-group" transform="translate(0,0)">
+            <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
+              <text id="circleBar-web-text" opacity="50" x="178" y="143">DEVELOP</text>
+              <g id="circleBar-web-chart" transform="translate(215,150)"></g>
+              <clippath id="circleBar-web-clipPath">
+                  <rect id="circleBar-web-clipLabels" x="205" y="215" width="180" height="0"></rect>
+              </clippath>
+              <g id="circleBar-web-legend" >
+              <!-- clip-path="url(#circleBar-web-clipPath)"> -->
+                  <text id="circleBar-web-values" transform="translate(222,225)"></text>
+                  <text id="circleBar-web-labels" transform="translate(277,225)"></text>
+              </g>
+          </g>
 
-	</head>
+          <g id="circleBar-mvc-group" transform="translate(362,0)">
+              <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
+              <text id="circleBar-mvc-text" opacity="50" x="177" y="143">MVC FWK</text>
+              <g id="circleBar-mvc-chart" transform="translate(215,150)"></g>
+              <clippath id="circleBar-mvc-clipPath">
+                  <rect id="circleBar-mvc-clipLabels" x="205" y="215" width="150" height="0"></rect>
+              </clippath>
+              <g id="circleBar-mvc-legend" >
+              <!-- clip-path="url(#circleBar-mobile-clipPath)"> -->
+                  <text id="circleBar-mvc-values" transform="translate(222,225)"></text>
+                  <text id="circleBar-mvc-labels" transform="translate(277,225)"></text>
+              </g>
+          </g>
 
-	<body>
-	
-	<!-- Loader -->
-	<div class="fh5co-loader"></div>
-	
-	<div id="fh5co-page">
-		<nav id="fh5co-nav" role="navigation">
-			<ul>
-				<li class="animate-box fh5co-active"><a href="index.html" class="transition">Home</a></li>
-				<li class="animate-box"><a href="about.html" class="transition">Bio</a></li>
-			</ul>
-			<a class="style-toggle js-style-toggle" data-style="default" href="#">
-				<span class="fh5co-circle"></span>
-			</a>
-		</nav>
-		
-		<header id="fh5co-header" role="banner" class="fh5co-project js-fh5co-waypoint no-border" data-colorbg="#222222" data-next="yes">
-			<div class="container">
-				<div class="fh5co-text-wrap animate-box">
-					<div class="fh5co-intro-text">
-						<h1>Welcome to my professional site</h1>
-						<h2>Crafted by <a href="http://guidoalloatti.com/" target="_blank">Guido Aloatti</a></h2>
-					</div>
-				</div>
-			</div>
-			<div class="btn-next animate-box fh5co-learn-more">
-				<a href="#" class="scroll-btn">
-					<span>See my portfolio</span>
-					<i class="icon-chevron-down"></i>
-				</a>
-			</div>
-		</header>
-		<!-- data-colorbg="#8cc53e"  -->
-		<div class="fh5co-project js-fh5co-waypoint" data-bgcolor="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/work_1_large.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-						<div class="img-holder-2 animate-box">
-							<img src="images/work_1_small.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Guide Landing Page</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="work_1.html" class="btn btn-light btn-outline transition">View Project</a></p>
-					</div>
-				</div>
+          <g id="circleBar-js-group" transform="translate(724,0)">
+              <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
+              <text id="circleBar-js-text" opacity="50" x="205" y="143">JS</text>
+              <g id="circleBar-js-chart" transform="translate(215,150)"></g>
+              <clippath id="circleBar-js-clipPath">
+                  <rect id="circleBar-js-clipLabels" x="205" y="215" width="150" height="0"></rect>
+              </clippath>
+              <g id="circleBar-js-legend" >
+              <!-- clip-path="url(#circleBar-mobile-clipPath)"> -->
+                  <text id="circleBar-js-values" transform="translate(222,225)"></text>
+                  <text id="circleBar-js-labels" transform="translate(277,225)"></text>
+              </g>
+          </g>
+      </g>
+    </svg>
+  </div>
 
-			</div>
-		</div>
-		<!-- data-colorbg="#FF6138" -->
-		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/work_2_large.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-						<div class="img-holder-2 animate-box">
-							<img src="images/work_2_small.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Sprint for Portfolio</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="work_1.html" class="btn btn-light btn-outline transition">View Project</a></p>
-					</div>
-				</div>
+    <div id="more_skills" class="left" style="display: none;">
+    <svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+     x="0px" y="0px" width="724px" height="400px"
+     overflow="visible" xml:space="preserve">
+      
+      <g id="circleBarChartsMore">
+          <g id="circleBar-platforms-group" transform="translate(0,0)">
+            <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
+              <text id="circleBar-platforms-text" opacity="50" x="158" y="143">PLATFORMS</text>
+              <g id="circleBar-platforms-chart" transform="translate(215,150)"></g>
+              <clippath id="circleBar-platforms-clipPath">
+                  <rect id="circleBar-platforms-clipLabels" x="205" y="215" width="180" height="0"></rect>
+              </clippath>
+              <g id="circleBar-platforms-legend" >
+                  <text id="circleBar-platforms-values" transform="translate(222,225)"></text>
+                  <text id="circleBar-platforms-labels" transform="translate(277,225)"></text>
+              </g>
+          </g>
+      </g>
+    </svg>
+  </div>
+      </div>
 
-			</div>
-		</div>
-		
-		<!-- data-colorbg="#2d4059" -->
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/work_3_large.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-						<div class="img-holder-2 animate-box">
-							<img src="images/work_3_small.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Display for Business Website</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="work_1.html" class="btn btn-light btn-outline transition">View Project</a></p>
-					</div>
-				</div>
+    <div id="contact-anchor"></div>
+    <div id="contact" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                    CONTACT
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>
+        <div id="message_sent" style="display: none;">
+            Thanks for your contact, your enquiry will be processed and I will get in touch very soon!
+        </div>
+        <div id="contact-div" class="middle-column">
+            Please let me know your questions, suggestions and concerns by filling out the contact form below.
+            <form id="contact-form">
+                <br>First Name<div class="horizontal contact-required" id="missing_first_name" style="display: none;">Required</div>
+                <br><input type="text" id="first_name" size="50"/>
+                <br><br>Last Name<div class="horizontal contact-required" id="missing_last_name" style="display: none;">Required</div>
+                <br> <input type="text" id="last_name" size="50"/>
+                <br><br>Email<div class="horizontal contact-required" id="missing_email" style="display: none;">Required</div>
+                <br><input type="text" id="email" size="50"/>
+                <br><br>Phone (optional) 
+                <br><input type="text" id="phone_number" size="50"/>
+                <br><br>Subject<div class="horizontal contact-required" id="missing_subject" style="display: none;">Required</div>
+                <br><input type="text" id="subject" size="50"/>
+                <br><br>Message<div class="horizontal contact-required" id="missing_message" style="display: none;">Required</div>
+                <br><textarea id="message" rows="8" cols="48" placeholder="Please enter your enquiry here..."></textarea>
+                <br><br>
+                <button class="btn">Submit Form</button>
+            </form>                
+        </div>
+    </div>
 
-			</div>
-		</div>
-		<!-- data-colorbg="#7bc74d" -->
-		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/work_4_large.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-						<div class="img-holder-2 animate-box">
-							<img src="images/work_4_small.jpg" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Slant for Creatives</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="work_1.html" class="btn btn-light btn-outline transition">View Project</a></p>
-					</div>
-				</div>
 
-			</div>
-		</div>
-		<footer id="fh5co-footer" class="js-fh5co-waypoint">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<p><small>&copy; 2016 Hold. All Rights Reserved. <br> Created by <a href="http://guidoalloatti.com/" target="_blank">guidoalloatti.com</a> </small> </p>
-						<ul class="fh5co-social">
-							<li>
-								<a href="#"><i class="icon-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon-instagram"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon-dribbble"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+  <div id="visualizer-anchor"></div>
+    <div id="visualizer" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                    VISUALIZER
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>   
+        <div>
+          A simple and visual way to show my knowledge and skills.
+        </div>
+        <br/><br/>
+      <div id="carousel">
+        
 
-	</div>
-	
-			
-	
+  <div id="mvc_carousel" class="carousel-element">
+    <div class="carousel-element-header">
 
-	</body>
-</html>
+      <div class="carousel-current"><button onclick="changeVisualElement('mvc');" class="carousel_selected">MVC Frameworks</button></div>
+      <div class="carousel-near"><button onclick="changeVisualElement('platforms');" class="carousel-button">Platforms</button></div>
+      <div class="carousel-far"><button onclick="changeVisualElement('js');" class="carousel-button">Javascript</button></div>
+      <div class="carousel-further"><button onclick="changeVisualElement('misc');" class="carousel-button">Tools</button></div>
+      <div class="carousel-furthest"><button onclick="changeVisualElement('script');" class="carousel-button">Scripting</button></div>
 
+    </div>
+      <div class="horizontal">
+        <a href="http://cakephp.org/" target="_blank">
+          <div id="cakephp-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          CakePHP
+        </span> 
+     </div>
+     <div class="horizontal">
+        <a href="http://framework.zend.com/" target="_blank">
+          <div id="zend-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Zend
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://symfony.com/" target="_blank">
+          <div id="symfony-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Simfony
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://rubyonrails.org/" target="_blank">
+          <div id="rails-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Ruby on Rails
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://turbogears.org/" target="_blank">
+          <div id="turbogears-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Turbogears
+        </span> 
+    </div>
+  </div>
+
+  <div id="platforms_carousel" class="carousel-element">
+    <div class="carousel-element-header">
+      <div class="carousel-current"><button onclick="changeVisualElement('mvc');" class="carousel-button">MVC Frameworks</button></div>
+      <div class="carousel-near"><button onclick="changeVisualElement('platforms');" class="carousel_selected">Platforms</button></div>
+      <div class="carousel-far"><button onclick="changeVisualElement('js');" class="carousel-button">Javascript</button></div>
+      <div class="carousel-further"><button onclick="changeVisualElement('misc');" class="carousel-button">Tools</button></div>
+      <div class="carousel-furthest"><button onclick="changeVisualElement('script');" class="carousel-button">Scripting</button></div>
+    </div>
+      <div class="horizontal">
+        <a href="http://magento.com/" target="_blank">
+          <div id="magento-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Magento
+        </span> 
+     </div>
+     <div class="horizontal">
+        <a href="http://www.sugarcrm.com/" target="_blank">
+          <div id="sugarcrm-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          SugarCRM
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.drupal.org/" target="_blank">
+          <div id="drupal-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Drupal
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://moodle.org/" target="_blank">
+          <div id="moodle-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Moodle
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://wordpress.com/" target="_blank">
+          <div id="wordpress-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Wordpress
+        </span> 
+    </div>  
+  </div>
+
+  <div id="js_carousel" class="carousel-element">
+    <div class="carousel-element-header">
+      <div class="carousel-current"><button onclick="changeVisualElement('mvc');" class="carousel-button">MVC Frameworks</button></div>
+      <div class="carousel-near"><button onclick="changeVisualElement('platforms');" class="carousel-button">Platforms</button></div>
+      <div class="carousel-far"><button onclick="changeVisualElement('js');" class="carousel_selected">Javascript</button></div>
+      <div class="carousel-further"><button onclick="changeVisualElement('misc');" class="carousel-button">Tools</button></div>
+      <div class="carousel-furthest"><button onclick="changeVisualElement('script');" class="carousel-button">Scripting</button></div>
+    </div>
+      <div class="horizontal">
+        <a href="https://jquery.com/" target="_blank">
+          <div id="jquery-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          jQuery
+        </span> 
+     </div>
+     <div class="horizontal">
+        <a href="https://angularjs.org/" target="_blank">
+          <div id="angular-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Angular.js
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.meteor.com/" target="_blank">
+          <div id="meteor-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Meteor.js
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://nodejs.org/" target="_blank">
+          <div id="node-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Node.js
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://coffeescript.org/" target="_blank">
+          <div id="coffee-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          CoffeeScript
+        </span> 
+    </div>
+  </div>
+
+  <div id="misc_carousel" class="carousel-element">
+    <div class="carousel-element-header">
+  
+      <div class="carousel-current"><button onclick="changeVisualElement('mvc');" class="carousel-button">MVC Frameworks</button></div>
+      <div class="carousel-near"><button onclick="changeVisualElement('platforms');" class="carousel-button">Platforms</button></div>
+      <div class="carousel-far"><button onclick="changeVisualElement('js');" class="carousel-button">Javascript</button></div>
+      <div class="carousel-further"><button onclick="changeVisualElement('misc');" class="carousel_selected">Tools</button></div>
+      <div class="carousel-furthest"><button onclick="changeVisualElement('script');" class="carousel-button">Scripting</button></div> 
+
+    </div>
+      <div class="horizontal">
+        <a href="https://git-scm.com/" target="_blank">
+          <div id="git-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Git
+        </span> 
+     </div>
+     <div class="horizontal">
+        <a href="https://www.mysql.com/" target="_blank">
+          <div id="mysql-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Mysql
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.scrum.org/" target="_blank">
+          <div id="scrum-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Scrum
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://www.w3schools.com/html/" target="_blank">
+          <div id="html5-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          HTML5
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="http://www.w3schools.com/css/css3_intro.asp" target="_blank">
+          <div id="css3-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          CSS3
+        </span> 
+    </div>
+  </div>
+
+  <div id="script_carousel" class="carousel-element">
+    <div class="carousel-element-header">
+        <div class="carousel-current"><button onclick="changeVisualElement('mvc');" class="carousel-button">MVC Frameworks</button></div>
+      <div class="carousel-near"><button onclick="changeVisualElement('platforms');" class="carousel-button">Platforms</button></div>
+      <div class="carousel-far"><button onclick="changeVisualElement('js');" class="carousel-button">Javascript</button></div>
+      <div class="carousel-further"><button onclick="changeVisualElement('misc');" class="carousel-button">Tools</button></div>
+      <div class="carousel-furthest"><button onclick="changeVisualElement('script');" class="carousel_selected">Scripting</button></div> 
+
+    </div>
+      <div class="horizontal">
+        <a href="http://nz2.php.net/" target="_blank">
+          <div id="php-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          PHP
+        </span> 
+     </div>
+     <div class="horizontal">
+        <a href="https://www.ruby-lang.org/en/" target="_blank">
+          <div id="ruby-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Ruby
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.python.org/" target="_blank">
+          <div id="python-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Python
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.javascript.com/" target="_blank">
+          <div id="javascript-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Javascript
+        </span> 
+    </div>
+    <div class="horizontal">
+        <a href="https://www.perl.org/" target="_blank">
+          <div id="perl-carousel-image" class="carousel-element-common"></div>
+        </a>
+        <span class="carousel-element-title"> 
+          Perl
+        </span> 
+    </div>
+  </div>
+    </div> 
+  </div>
+
+    <div id="footer">
+        <div>
+            <div class="connect">
+                <div class="connect-title">
+                    Get in touch!
+                </div>
+                <hr style="width: 450px;">
+                <!-- <hr class="hr_square"> -->
+                <div class="connect-elements">
+                    <div class="connect-element">
+                        <div class="connect-element-image">
+                            <img src="images/github320x320.jpg" width="64px" height="64px">
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-title">
+                            Github
+                        </div>
+                        <div class="connect-element-text">
+                            <a href="https://github.com/guidoalloatti" target="_blank">guidoalloatti</a>
+                        </div>
+                    </div>
+
+                    <div class="connect-element">
+                        <div class="connect-element-image">
+                            <img src="images/linkedin320x320.jpg" width="64px" height="64px">
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-title">
+                            Linkedin
+                        </div>
+                        <div class="connect-element-text">
+                            <a href="http://nz.linkedin.com/in/guidoalloatti" target="_blank">Guido Alloatti</a>
+                        </div>
+                    </div>
+
+                    <div class="connect-element">
+                        <div class="connect-element-image">
+                            <img src="images/facebook320x320.jpg" width="64px" height="64px">
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-title">
+                            Facebook
+                        </div>
+                        <div class="connect-element-text">
+                            <a href="https://www.facebook.com/guido.alloatti" target="_blank">guido.alloatti</a>
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-image">
+                            <img src="images/skype320x320.jpg" width="64px" height="64px">
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-title">
+                            Skype
+                        </div>
+                        <div class="connect-element-text">
+                            <a>guidoalloatti</a>
+                        </div>
+                    </div>
+
+                    <div class="connect-element">
+                        <div class="connect-element-image">
+                            <img src="images/gmail320x320.jpg" width="64px" height="64px">
+                        </div>
+                    </div>
+                    <div class="connect-element">
+                        <div class="connect-element-title">
+                            Email
+                        </div>
+                        <div class="connect-element-text">
+                            <a href="mailto:guidoalloatti@gmail.com?Subject=Hi Guido!" target="_top">guidoalloatti@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom"></div>
+</body>
