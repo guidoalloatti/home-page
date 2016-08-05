@@ -182,56 +182,56 @@ $(document).ready(function() {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#top').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#go_bottom_link").click(function(event) {  
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#bottom').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#background_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#background-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#about_me_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#about-me-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#contact_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#contact-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#visualizer_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#visualizer-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#skills_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#my-skills-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
     $("#my_work_link").click(function(event) {
       event.preventDefault();
       $(document.body).animate({
         'scrollTop': $('#my-work-anchor').offset().top
-      }, 1000);
+      }, 500);
     });
 
 
@@ -240,63 +240,63 @@ $(document).ready(function() {
     //   arrows: true
     // });
 
-  //   $("#contact-form").submit(function (event) {
-  //       $('#message_sent').hide();
-  //       event.preventDefault();
+    //   $("#contact-form").submit(function (event) {
+    //       $('#message_sent').hide();
+    //       event.preventDefault();
 
-  //       var fields_error = false;
-  //       if(first_name.value == '') {
-  //           $("#missing_first_name").show();
-  //           fields_error = true;
-  //       } else $("#missing_first_name").hide();
+    //       var fields_error = false;
+    //       if(first_name.value == '') {
+    //           $("#missing_first_name").show();
+    //           fields_error = true;
+    //       } else $("#missing_first_name").hide();
 
-  //       if(last_name.value == '') {
-  //           $("#missing_last_name").show();
-  //           fields_error = true;
-  //       } else $("#missing_last_name").hide();
+    //       if(last_name.value == '') {
+    //           $("#missing_last_name").show();
+    //           fields_error = true;
+    //       } else $("#missing_last_name").hide();
         
-  //       if(email.value == '') {
-  //           $("#missing_email").show();
-  //           fields_error = true;
-  //       } else $("#missing_email").hide();
+    //       if(email.value == '') {
+    //           $("#missing_email").show();
+    //           fields_error = true;
+    //       } else $("#missing_email").hide();
 
-  //       if(subject.value == '') {
-  //           $("#missing_subject").show();
-  //           fields_error = true;
-  //       } else $("#missing_subject").hide();
+    //       if(subject.value == '') {
+    //           $("#missing_subject").show();
+    //           fields_error = true;
+    //       } else $("#missing_subject").hide();
 
-  //       if(message.value == '') {
-  //           $("#missing_message").show();
-  //           fields_error = true;
-  //       } else $("#missing_message").hide();
-  //       if(fields_error) return false;
+    //       if(message.value == '') {
+    //           $("#missing_message").show();
+    //           fields_error = true;
+    //       } else $("#missing_message").hide();
+    //       if(fields_error) return false;
 
 
-  //       var fullMessage     = 
-  //           'New enquiry!\n' +
-  //           '============\n\n' +
-  //           'Enquiry made by: '  + first_name.value + ' ' + last_name.value + '\n' +
-  //           'Phone Number: '    + phone_number.value  + '\n' +
-  //           'Email Address: '   + email.value + '\n\n' +
-  //           'Message Received:' + '\n' + 
-  //           '=================' + '\n' +
-  //           message.value;
+    //       var fullMessage     = 
+    //           'New enquiry!\n' +
+    //           '============\n\n' +
+    //           'Enquiry made by: '  + first_name.value + ' ' + last_name.value + '\n' +
+    //           'Phone Number: '    + phone_number.value  + '\n' +
+    //           'Email Address: '   + email.value + '\n\n' +
+    //           'Message Received:' + '\n' + 
+    //           '=================' + '\n' +
+    //           message.value;
 
-  //       Meteor.call('sendEmail',
-  //           'email_address@gmail.com',
-  //           email.value,
-  //           subject.value,
-  //           fullMessage);
+    //       Meteor.call('sendEmail',
+    //           'email_address@gmail.com',
+    //           email.value,
+    //           subject.value,
+    //           fullMessage);
 
-  //       $("#first_name").val('');
-  //       $("#last_name").val('');
-  //       $("#email").val('');
-  //       $("#phone_number").val('');        
-  //       $("#subject").val('');
-  //       $("#message").val('');
-  //       $('#message_sent').show();
-  //   }
-  // });
+    //       $("#first_name").val('');
+    //       $("#last_name").val('');
+    //       $("#email").val('');
+    //       $("#phone_number").val('');        
+    //       $("#subject").val('');
+    //       $("#message").val('');
+    //       $('#message_sent').show();
+    //   }
+    // });
 
 
 
