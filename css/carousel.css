@@ -26,10 +26,11 @@
 
 .carousel_selected {
     margin-top: 10px;
-    font-size: 22px;
-    background-color: #4CAF50;
-    border: none; /* 1px solid white; */
-    color: white;
+    font-size: 24px;
+    background-color: white; 
+    /*#4CAF50;*/
+    border: 1px solid white; /* 1px solid white; */
+    color: #4CAF50;
     padding: 8px 40px;
     text-align: center;
     text-decoration: none;
@@ -39,25 +40,31 @@
     border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 
 
 }
 
 .carousel-button {
-    margin-top: 0px;
+    margin-top: 10px;
     font-size: 16px;
     background-color: #4CAF50;
     border: none;
     color: white;
     width: 200px;
-    height: 50px;
+    height: 60px;
     /*padding: 8px 40px;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 0px 0px 5px 5px;
-    -webkit-border-radius: 0px 0px 5px 5px;
-    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); 
 }
 
 .carousel-button:hover {

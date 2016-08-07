@@ -1,4 +1,4 @@
-/*Platforms*/
+	/*Platforms*/
 #wordpress-carousel-image {
 	background: url("../images/wordpress.jpg") no-repeat;
 	background-size: 150px 150px;
@@ -122,16 +122,9 @@
 }
 
 .carousel-element-header {
+	background-color: rgba(76,175,80,0.49);
 	margin-bottom: 20px;
 	height: 80px;
-	
-	/*font-size: 24px;*/
-	/*font-weight: lighter;*/
-	/*width: 100%;*/
-	/*color: #81b3d2;*/
-	background-color: #323232;
-	/*padding: 20px;*/
-
 	border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
@@ -164,12 +157,6 @@
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-#carousel div {
-  /*width: 80%;*/
-  /*height: 300px;*/
-  /*padding: 50px;*/
 }
 
 .slick-prev:before, .slick-next:before {
