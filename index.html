@@ -360,7 +360,7 @@
             </div>
         </div>
 
-      <div class="left">
+      <div class="left" style="padding-left: 10%">
         <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
          x="0px" y="0px" width="724px" height="400px"
@@ -368,12 +368,11 @@
           
           <g id="circleBarCharts">
               <g id="circleBar-web-group" transform="translate(0,0)">
-                <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
-                  <text id="circleBar-web-text" opacity="50" x="178" y="143">DEVELOP</text>
+                <image id="circleBar-web-icon" opacity="50" x="150" y="85" overflow="visible" width="130" height="130" xlink:href="images/web2.png" />
                   <g id="circleBar-web-chart" transform="translate(215,150)"></g>
                   <clippath id="circleBar-web-clipPath">
                       <rect id="circleBar-web-clipLabels" x="205" y="215" width="180" height="0"></rect>
-                  </clippath>
+                  </clippath> 
                   <g id="circleBar-web-legend" >
                   <!-- clip-path="url(#circleBar-web-clipPath)"> -->
                       <text id="circleBar-web-values" transform="translate(222,225)"></text>
@@ -381,9 +380,10 @@
                   </g>
               </g>
 
+
               <g id="circleBar-mvc-group" transform="translate(362,0)">
-                  <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
-                  <text id="circleBar-mvc-text" opacity="50" x="177" y="143">MVC FWK</text>
+                  <image id="circleBar-mvc-icon" opacity="50" x="145" y="80" overflow="visible" width="140" height="140" xlink:href="images/mvc.png" />
+
                   <g id="circleBar-mvc-chart" transform="translate(215,150)"></g>
                   <clippath id="circleBar-mvc-clipPath">
                       <rect id="circleBar-mvc-clipLabels" x="205" y="215" width="150" height="0"></rect>
@@ -396,8 +396,7 @@
               </g>
 
               <g id="circleBar-js-group" transform="translate(724,0)">
-                  <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
-                  <text id="circleBar-js-text" opacity="50" x="205" y="143">JS</text>
+                  <image id="circleBar-js-icon" opacity="50" x="153" y="87" overflow="visible" width="125" height="125" xlink:href="images/js.png" />
                   <g id="circleBar-js-chart" transform="translate(215,150)"></g>
                   <clippath id="circleBar-js-clipPath">
                       <rect id="circleBar-js-clipLabels" x="205" y="215" width="150" height="0"></rect>
@@ -412,6 +411,7 @@
         </svg>
       </div>
 
+
       <div id="more_skills" class="left" style="display: none;">
         <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -420,7 +420,7 @@
           
           <g id="circleBarChartsMore">
               <g id="circleBar-platforms-group" transform="translate(0,0)">
-                <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="http://www.frank-designs.com/images/icon_web.png" />
+                <image id="circleBar-web-icon" opacity="50" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="images/web2.png" />
                   <text id="circleBar-platforms-text" opacity="50" x="158" y="143">PLATFORMS</text>
                   <g id="circleBar-platforms-chart" transform="translate(215,150)"></g>
                   <clippath id="circleBar-platforms-clipPath">
@@ -437,40 +437,7 @@
     </div>
 
 
-    <div id="contact-anchor"></div>
-    <div id="contact" class="centered">
-        <div class="block-name">
-            <div class="top-block-title">
-                    CONTACT
-                <hr style="width: 350px;">
-                <hr class="hr_square">
-            </div>
-        </div>
-        <div id="message_sent" style="display: none;">
-            Thanks for your contact, your enquiry will be processed and I will get in touch very soon!
-        </div>
-        <div id="contact-div" class="middle-column">
-            Please let me know your questions, suggestions and concerns by filling out the contact form below.
-            <form id="contact-form">
-                <br>First Name<div class="horizontal contact-required" id="missing_first_name" style="display: none;">Required</div>
-                <br><input type="text" id="first_name" size="50"/>
-                <br><br>Last Name<div class="horizontal contact-required" id="missing_last_name" style="display: none;">Required</div>
-                <br> <input type="text" id="last_name" size="50"/>
-                <br><br>Email<div class="horizontal contact-required" id="missing_email" style="display: none;">Required</div>
-                <br><input type="text" id="email" size="50"/>
-                <br><br>Phone (optional) 
-                <br><input type="text" id="phone_number" size="50"/>
-                <br><br>Subject<div class="horizontal contact-required" id="missing_subject" style="display: none;">Required</div>
-                <br><input type="text" id="subject" size="50"/>
-                <br><br>Message<div class="horizontal contact-required" id="missing_message" style="display: none;">Required</div>
-                <br><textarea id="message" rows="8" cols="48" placeholder="Please enter your enquiry here..."></textarea>
-                <br><br>
-                <button class="btn">Submit Form</button>
-            </form>                
-        </div>
-    </div>
-
-
+    <!-- VISUALIZER SECTION -->
     <div id="visualizer-anchor"></div>
     <div id="visualizer" class="centered">
       <div class="block-name">
@@ -724,6 +691,42 @@
     </div> 
   </div>
     
+     <!-- CONTACT SECTION -->
+    <div id="contact-anchor"></div>
+    <div id="contact" class="centered">
+        <div class="block-name">
+            <div class="top-block-title">
+                    CONTACT
+                <hr style="width: 350px;">
+                <hr class="hr_square">
+            </div>
+        </div>
+        <div id="message_sent" style="display: none;">
+            Thanks for your contact, your enquiry will be processed and I will get in touch very soon!
+        </div>
+        <div id="contact-div" class="middle-column">
+            Please let me know your questions, suggestions and concerns by filling out the contact form below.
+            <form id="contact-form">
+                <br>First Name<div class="horizontal contact-required" id="missing_first_name" style="display: none;">Required</div>
+                <br><input type="text" id="first_name" size="50"/>
+                <br><br>Last Name<div class="horizontal contact-required" id="missing_last_name" style="display: none;">Required</div>
+                <br> <input type="text" id="last_name" size="50"/>
+                <br><br>Email<div class="horizontal contact-required" id="missing_email" style="display: none;">Required</div>
+                <br><input type="text" id="email" size="50"/>
+                <br><br>Phone (optional) 
+                <br><input type="text" id="phone_number" size="50"/>
+                <br><br>Subject<div class="horizontal contact-required" id="missing_subject" style="display: none;">Required</div>
+                <br><input type="text" id="subject" size="50"/>
+                <br><br>Message<div class="horizontal contact-required" id="missing_message" style="display: none;">Required</div>
+                <br><textarea id="message" rows="8" cols="48" placeholder="Please enter your enquiry here..."></textarea>
+                <br><br>
+                <button class="btn">Submit Form</button>
+            </form>                
+        </div>
+    </div>
+
+
+    <!-- FOOTER SECTION -->
     <div id="footer">
         <div>
             <div class="connect">

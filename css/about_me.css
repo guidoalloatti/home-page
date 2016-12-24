@@ -12,6 +12,10 @@
 
 #about-me-location {
 	font-size: 18px;
-	margin-bottom: 50px;
-	margin-top: 10px;
+	margin-bottom: 100px;
+	/*padding-top: 130px;*/
+}
+
+#about-me-anchor {
+    padding-top: 10px;
 }
