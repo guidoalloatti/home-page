@@ -14,7 +14,7 @@ a,a:visited,a:hover,a:active{
           backface-visibility:hidden;
   transition:0.5s color ease;
 	text-decoration:none;
-	color: #81b3d2;
+	color: #81b3d2 !important;
 }
 a:hover{
   color: #4aaeee;

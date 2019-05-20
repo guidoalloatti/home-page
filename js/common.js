@@ -273,7 +273,7 @@ $(document).ready(function() {
 
 
     //       var fullMessage     = 
-    //           'New enquiry!\n' +
+    //           'New enquiry!\n`12347qa' +
     //           '============\n\n' +
     //           'Enquiry made by: '  + first_name.value + ' ' + last_name.value + '\n' +
     //           'Phone Number: '    + phone_number.value  + '\n' +
@@ -303,3 +303,16 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function(){
+    // $("#head").load("views/head.html");
+    $("#header").load("views/header.html");
+    $("#google_analitics").load("views/google_analitics.html");
+    $("#bio").load("views/bio.html");
+    $("#about").load("views/about.html");
+    $("#background").load("views/background.html");
+    $("#experience").load("views/experience.html");
+    $("#skills").load("views/skills.html");
+    $("#visual").load("views/visual.html");
+    $("#contact").load("views/contact.html");
+    $("#footer").load("views/footer.html");
+});
